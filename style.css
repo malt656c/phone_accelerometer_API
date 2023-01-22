@@ -1,12 +1,15 @@
-.arena{
-width: 100dvw;
-height:100dvh;
+.arena {
+  width: 100vw;
+  height: 100vh;
+
+  width: 100dvw;
+  height: 100dvh;
 }
 
-.player{
-width: 20px;
-aspect-ratio: 1/1;
-border-radius: 50%;
-background-color: black;
-position: absolute;
+.player {
+  width: 20px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
 }
