@@ -7,22 +7,19 @@ const player = document.querySelector(".player");
 const maxX = arena.clientWidth - player.clientWidth;
 const maxY = arena.clientHeight - player.clientHeight;
 
+console.log(maxX, maxY)
 function orientering(event) {
   const x = event.beta;
   const y = event.gamma;
 
-
+ x_dir.textContent = `x : ${x.toFixed(2)}`;
+ y_dir.textContent = `y : ${y.toFixed(2)}`;
 
   x += 90;
   y += 90;
 
-  player.style.top = `${((maxY * y) / 180) - 10}px`;
-  player.style.left = `${((maxX * x) / 180) - 10}px`;
-
-x_dir.textContent = `x : ${x.toFixed(2)+= 90, arena.clientWidth, maxX} `;
-
- y_dir.textContent = `y : ${y.toFixed(2)+= 90, arena.clientHeight, maxY}`;
-
+  player.style.top = `${(maxY * y) / 180 - 10}px`;
+  player.style.left = `${(maxX * x) / 180 - 10}px`;
 }
 
 window.addEventListener("deviceorientation", orientering);
