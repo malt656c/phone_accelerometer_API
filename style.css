@@ -1,0 +1,12 @@
+.arena{
+width: 100dvw;
+height:100dvh;
+}
+
+.player{
+width: 20px;
+aspect-ratio: 1/1;
+border-radius: 50%;
+background-color: black;
+position: absolute;
+}
