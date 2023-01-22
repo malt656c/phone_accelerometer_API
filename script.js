@@ -12,14 +12,17 @@ function orientering(event) {
   const y = event.gamma;
 
 
-  x_dir.textContent = `x : ${x.toFixed(2)+= 90}`;
-  y_dir.textContent = `y : ${y.toFixed(2)+= 90}`;
 
   x += 90;
   y += 90;
 
   player.style.top = `${((maxY * y) / 180) - 10}px`;
   player.style.left = `${((maxX * x) / 180) - 10}px`;
+
+x_dir.textContent = `x : ${x.toFixed(2)+= 90, arena.clientWidth, maxX} `;
+
+ y_dir.textContent = `y : ${y.toFixed(2)+= 90, arena.clientHeight, maxY}`;
+
 }
 
 window.addEventListener("deviceorientation", orientering);
