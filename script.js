@@ -6,7 +6,7 @@ function orientering(event) {
   const alpha = event.alpha;
   const beta = event.beta;
   const gamma = event.gamma;
-  z_dir.innerText(alpha)
-  x_dir.innerText(beta)
-  y_dir.innerText(gamma)
+  z_dir.textContent(alpha)
+  x_dir.textContent(beta)
+  y_dir.textContent(gamma)
 }
