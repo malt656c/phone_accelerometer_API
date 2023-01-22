@@ -7,9 +7,9 @@ function orientering(event) {
   const x = event.beta;
   const y = event.gamma;
 
-  z_dir.textContent = `z : ${z}\n`;
-  x_dir.textContent = `x : ${x}\n`;
-  y_dir.textContent = `y : ${y}\n`;
+  z_dir.textContent = `z : ${z.toPrecision()}\n`;
+  x_dir.textContent = `x : ${x.toPrecision()}\n`;
+  y_dir.textContent = `y : ${y.toPrecision()}\n`;
 }
 
 window.addEventListener("deviceorientation", orientering);
