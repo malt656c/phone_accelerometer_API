@@ -6,7 +6,8 @@ function orientering(event) {
   const alpha = event.alpha;
   const beta = event.beta;
   const gamma = event.gamma;
-  z_dir.textContent(alpha)
-  x_dir.textContent(beta)
-  y_dir.textContent(gamma)
+  z_dir.textContent = alpha;
+  x_dir.textContent = beta;
+  y_dir.textContent = gamma;
 }
+window.addEventListener("deviceorientation", orientering);
